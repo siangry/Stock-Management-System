@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.effect.Bloom?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane id="borderPane1" fx:id="borderPane1" prefHeight="395.0" prefWidth="584.0" style="-fx-background-color: LAVENDER;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mainSceneController">
+   <center>
+      <VBox alignment="CENTER" prefHeight="400.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome to SMS" textAlignment="CENTER">
+               <font>
+                  <Font name="Tw Cen MT Condensed" size="65.0" />
+               </font>
+               <effect>
+                  <Bloom />
+               </effect>
+               <VBox.margin>
+                  <Insets bottom="30.0" left="30.0" right="30.0" top="30.0" />
+               </VBox.margin>
+            </Text>
+            <VBox alignment="CENTER">
+               <children>
+                  <Text fill="#331172" nodeOrientation="LEFT_TO_RIGHT" strokeType="OUTSIDE" strokeWidth="0.0" text="Group Member:" textAlignment="RIGHT">
+                     <font>
+                        <Font name="Tw Cen MT Condensed" size="21.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="W_RESIZE" />
+                     </cursor>
+                  </Text>
+                  <Text fill="#160894" nodeOrientation="LEFT_TO_RIGHT" strokeType="OUTSIDE" strokeWidth="0.0" text="Kok Yung Thow 2106301" textAlignment="RIGHT">
+                     <font>
+                        <Font name="Tw Cen MT Condensed" size="21.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="W_RESIZE" />
+                     </cursor>
+                  </Text>
+                  <Text fill="#160894" nodeOrientation="LEFT_TO_RIGHT" strokeType="OUTSIDE" strokeWidth="0.0" text="Siang Ruo Ying 2104894" textAlignment="RIGHT">
+                     <font>
+                        <Font name="Tw Cen MT Condensed" size="21.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="W_RESIZE" />
+                     </cursor>
+                  </Text>
+                  <Text fill="#160894" nodeOrientation="LEFT_TO_RIGHT" strokeType="OUTSIDE" strokeWidth="0.0" text="Tan Pei Shi 2105436" textAlignment="RIGHT">
+                     <font>
+                        <Font name="Tw Cen MT Condensed" size="21.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="W_RESIZE" />
+                     </cursor>
+                  </Text>
+                  <Text fill="#160894" nodeOrientation="LEFT_TO_RIGHT" strokeType="OUTSIDE" strokeWidth="0.0" text="Teh Yu Qian 2105381" textAlignment="RIGHT">
+                     <font>
+                        <Font name="Tw Cen MT Condensed" size="21.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="W_RESIZE" />
+                     </cursor>
+                  </Text>
+               </children>
+               <opaqueInsets>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </opaqueInsets>
+            </VBox>
+         </children>
+      </VBox>
+   </center>
+   <top>
+      <Text id="dateTime" fx:id="dateTime" strokeType="OUTSIDE" strokeWidth="0.0" text="Date and Time" BorderPane.alignment="CENTER_RIGHT">
+         <BorderPane.margin>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </BorderPane.margin>
+         <font>
+            <Font name="Tw Cen MT Condensed" size="18.0" />
+         </font>
+      </Text>
+   </top>
+</BorderPane>

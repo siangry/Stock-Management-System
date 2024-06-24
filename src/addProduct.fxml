@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane prefHeight="500.0" prefWidth="600.0" style="-fx-background-color: lavender;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="addProductController">
+   <center>
+      <VBox alignment="CENTER" prefHeight="457.0" prefWidth="600.0" spacing="10.0" BorderPane.alignment="CENTER_LEFT">
+         <children>
+            <Text id="productNum" fx:id="productNum" fill="#7400ff" strokeType="OUTSIDE" strokeWidth="0.0" text="Text">
+               <font>
+                  <Font name="Tw Cen MT Condensed" size="24.0" />
+               </font>
+            </Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="What would you like to add?&#10;[1] Refrigerator&#10;[2] TV" textAlignment="JUSTIFY">
+               <font>
+                  <Font name="Tw Cen MT Condensed" size="18.0" />
+               </font>
+            </Text>
+            <HBox alignment="CENTER" prefHeight="1.0" prefWidth="600.0" spacing="10.0">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Option:" textAlignment="JUSTIFY">
+                     <font>
+                        <Font name="Tw Cen MT Condensed" size="18.0" />
+                     </font>
+                  </Text>
+                  <TextField id="optionInput" fx:id="optionInput" alignment="CENTER" prefHeight="33.0" prefWidth="71.0" promptText="1 or 2">
+                     <font>
+                        <Font name="Tw Cen MT Condensed" size="18.0" />
+                     </font>
+                  </TextField>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" style="visibility: false;" text="Text" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" spacing="45.0">
+               <children>
+                  <Button id="cancelButton" fx:id="cancelButton" contentDisplay="GRAPHIC_ONLY" mnemonicParsing="false" style="-fx-background-color: lavender;" text="Button">
+                     <graphic>
+                        <ImageView fitHeight="64.0" fitWidth="33.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@square%20cross.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button id="confirmButton" fx:id="confirmButton" contentDisplay="GRAPHIC_ONLY" layoutX="284.0" layoutY="10.0" mnemonicParsing="false" style="-fx-background-color: lavender;" text="Button">
+                     <graphic>
+                        <ImageView fitHeight="30.0" fitWidth="29.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@square%20true.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+               </children>
+            </HBox>
+            <Text id="errorMessage" fx:id="errorMessage" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="JUSTIFY">
+               <font>
+                  <Font name="Tw Cen MT Condensed" size="18.0" />
+               </font>
+            </Text>
+            <VBox id="vbox" fx:id="vbox" alignment="CENTER">
+               <children>
+                  <Separator prefWidth="200.0" />
+                  <Text id="text1" fx:id="text1" fill="#7400ff" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER">
+                     <font>
+                        <Font name="Tw Cen MT Condensed" size="24.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets bottom="10.0" />
+                     </VBox.margin>
+                  </Text>
+                  <HBox prefHeight="100.0" prefWidth="200.0" spacing="10.0">
+                     <children>
+                        <VBox prefHeight="132.0" prefWidth="305.0" spacing="5.0">
+                           <children>
+                              <HBox alignment="CENTER_RIGHT" spacing="10.0">
+                                 <children>
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Name:" textAlignment="CENTER">
+                                       <font>
+                                          <Font name="Tw Cen MT Condensed" size="18.0" />
+                                       </font>
+                                    </Text>
+                                    <TextField id="name" fx:id="name" alignment="CENTER" promptText="Name">
+                                       <font>
+                                          <Font name="Tw Cen MT Condensed" size="18.0" />
+                                       </font>
+                                    </TextField>
+                                 </children>
+                              </HBox>
+                              <HBox fx:id="hbox2" alignment="CENTER_RIGHT" spacing="10.0" visible="false">
+                                 <children>
+                                    <Text id="text3" fx:id="text3" strokeType="OUTSIDE" strokeWidth="0.0" text="Color:" textAlignment="CENTER">
+                                       <font>
+                                          <Font name="Tw Cen MT Condensed" size="18.0" />
+                                       </font>
+                                    </Text>
+                                    <TextField id="input2" fx:id="input2" alignment="CENTER" promptText="Color">
+                                       <font>
+                                          <Font name="Tw Cen MT Condensed" size="18.0" />
+                                       </font>
+                                    </TextField>
+                                 </children>
+                              </HBox>
+                              <HBox fx:id="hbox4" alignment="CENTER_RIGHT" spacing="10.0" visible="false">
+                                 <children>
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Quantity Available in Stock:" textAlignment="CENTER">
+                                       <font>
+                                          <Font name="Tw Cen MT Condensed" size="18.0" />
+                                       </font>
+                                    </Text>
+                                    <TextField id="quantity" fx:id="quantity" alignment="CENTER" promptText="Number">
+                                       <font>
+                                          <Font name="Tw Cen MT Condensed" size="18.0" />
+                                       </font>
+                                    </TextField>
+                                 </children>
+                              </HBox>
+                              <HBox fx:id="hbox6" alignment="CENTER_RIGHT" spacing="10.0" visible="false">
+                                 <children>
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Item Number:" textAlignment="CENTER">
+                                       <font>
+                                          <Font name="Tw Cen MT Condensed" size="18.0" />
+                                       </font>
+                                    </Text>
+                                    <TextField id="itemNum" fx:id="itemNum" alignment="CENTER" promptText="Item Number">
+                                       <font>
+                                          <Font name="Tw Cen MT Condensed" size="18.0" />
+                                       </font>
+                                    </TextField>
+                                 </children>
+                              </HBox>
+                           </children>
+                        </VBox>
+                        <VBox prefHeight="147.0" prefWidth="268.0" spacing="5.0">
+                           <children>
+                              <HBox fx:id="hbox1" alignment="CENTER_RIGHT" spacing="10.0" visible="false">
+                                 <children>
+                                    <Text id="text2" fx:id="text2" strokeType="OUTSIDE" strokeWidth="0.0" text="Door Design" textAlignment="CENTER">
+                                       <font>
+                                          <Font name="Tw Cen MT Condensed" size="18.0" />
+                                       </font>
+                                    </Text>
+                                    <TextField id="input1" fx:id="input1" alignment="CENTER" promptText="Door Design">
+                                       <font>
+                                          <Font name="Tw Cen MT Condensed" size="18.0" />
+                                       </font>
+                                    </TextField>
+                                 </children>
+                              </HBox>
+                              <HBox fx:id="hbox3" alignment="CENTER_RIGHT" spacing="10.0" visible="false">
+                                 <children>
+                                    <Text id="text4" fx:id="text4" strokeType="OUTSIDE" strokeWidth="0.0" text="Capacity" textAlignment="CENTER">
+                                       <font>
+                                          <Font name="Tw Cen MT Condensed" size="18.0" />
+                                       </font>
+                                    </Text>
+                                    <TextField id="input3" fx:id="input3" alignment="CENTER" promptText="Number">
+                                       <font>
+                                          <Font name="Tw Cen MT Condensed" size="18.0" />
+                                       </font>
+                                    </TextField>
+                                 </children>
+                              </HBox>
+                              <HBox fx:id="hbox5" alignment="CENTER_RIGHT" spacing="10.0" visible="false">
+                                 <children>
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Price:" textAlignment="CENTER">
+                                       <font>
+                                          <Font name="Tw Cen MT Condensed" size="18.0" />
+                                       </font>
+                                    </Text>
+                                    <TextField id="price" fx:id="price" alignment="CENTER" promptText="Number">
+                                       <font>
+                                          <Font name="Tw Cen MT Condensed" size="18.0" />
+                                       </font>
+                                    </TextField>
+                                 </children>
+                              </HBox>
+                           </children>
+                        </VBox>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+            <Text id="errorMessage2" fx:id="errorMessage2" layoutX="310.0" layoutY="265.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="JUSTIFY">
+               <font>
+                  <Font name="Tw Cen MT Condensed" size="18.0" />
+               </font>
+            </Text>
+         </children>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </VBox>
+   </center>
+   <bottom>
+      <Button id="nextButton" fx:id="nextButton" alignment="CENTER" contentDisplay="GRAPHIC_ONLY" mnemonicParsing="false" style="-fx-background-color: lavender;" text="Button" textAlignment="CENTER" BorderPane.alignment="BOTTOM_RIGHT">
+         <BorderPane.margin>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </BorderPane.margin>
+         <graphic>
+            <ImageView fitHeight="32.0" fitWidth="34.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@pngwing.com%20(1).png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+   </bottom>
+   <opaqueInsets>
+      <Insets />
+   </opaqueInsets>
+   <padding>
+      <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+   </padding>
+</BorderPane>

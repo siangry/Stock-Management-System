@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: lavender;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ExecuteMethodController">
+   <center>
+      <VBox alignment="TOP_CENTER" BorderPane.alignment="CENTER">
+         <children>
+            <Text id="headerText" fx:id="headerText" fill="#7b00ff" strokeType="OUTSIDE" strokeWidth="0.0" text="Text">
+               <font>
+                  <Font name="Tw Cen MT Condensed" size="36.0" />
+               </font>
+            </Text>
+            <ScrollPane fitToHeight="true" fitToWidth="true" prefHeight="197.0" prefWidth="600.0">
+               <content>
+                  <TextArea id="displayText" fx:id="displayText" editable="false" prefHeight="195.0" prefWidth="598.0" style="-fx-background-color: lavender;" wrapText="true">
+                     <font>
+                        <Font name="Tw Cen MT Condensed" size="18.0" />
+                     </font>
+                     <padding>
+                        <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+                     </padding>
+                  </TextArea>
+               </content>
+            </ScrollPane>
+            <VBox alignment="CENTER" spacing="5.0">
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+               <children>
+                  <HBox id="hbox" fx:id="hbox" alignment="CENTER" spacing="10.0">
+                     <children>
+                        <Text id="quesText" fx:id="quesText" strokeType="OUTSIDE" strokeWidth="0.0" text="Text">
+                           <font>
+                              <Font name="Tw Cen MT Condensed" size="18.0" />
+                           </font>
+                        </Text>
+                        <TextField id="inputTf" fx:id="inputTf" alignment="CENTER" prefHeight="33.0" prefWidth="75.0" promptText="Number">
+                           <font>
+                              <Font name="Tw Cen MT Condensed" size="18.0" />
+                           </font>
+                        </TextField>
+                        <Button id="confirmButton" fx:id="confirmButton" alignment="CENTER" contentDisplay="GRAPHIC_ONLY" mnemonicParsing="false" style="-fx-background-color: lavender;" text="Button">
+                           <graphic>
+                              <ImageView fitHeight="57.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@square%20true.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                     </children>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <padding>
+                        <Insets left="18.0" />
+                     </padding>
+                  </HBox>
+                  <Text id="errorMessage" fx:id="errorMessage" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER">
+                     <font>
+                        <Font name="Tw Cen MT Condensed" size="18.0" />
+                     </font>
+                  </Text>
+               </children>
+            </VBox>
+            <Button id="nextButton" fx:id="nextButton" contentDisplay="GRAPHIC_ONLY" mnemonicParsing="false" style="-fx-background-color: lavender;" text="Button">
+               <graphic>
+                  <ImageView fitHeight="39.0" fitWidth="59.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@pngwing.com%20(1).png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <VBox.margin>
+                  <Insets left="530.0" />
+               </VBox.margin>
+            </Button>
+         </children>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <BorderPane.margin>
+            <Insets top="20.0" />
+         </BorderPane.margin>
+      </VBox>
+   </center>
+</BorderPane>
